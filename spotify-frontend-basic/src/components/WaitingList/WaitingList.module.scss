@@ -1,0 +1,57 @@
+.queue {
+    width: 22%;
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin: 0px 4px;
+    max-height: 82%;
+    overflow-y: auto;
+}
+
+.queue h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.queue .empty-queue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.queue .empty-queue i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.queue .empty-queue button {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-container{
+    position: fixed;
+    right: 34px;
+    top: 480px;
+}
+
+.chat-btn{
+    background-color: #0068fe;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+}
