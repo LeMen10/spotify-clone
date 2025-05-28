@@ -1,0 +1,288 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup {
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+    color: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.4s ease;
+    border: 1px solid #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.badge {
+    background: linear-gradient(90deg, #ff8a00, #ff0058);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.close {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.2s;
+    
+    &:hover {
+        color: white;
+    }
+}
+
+.content {
+    padding: 0 30px 30px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.heading {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    
+    .highlight {
+        color: #1db954;
+    }
+}
+
+.subtext {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.primary {
+    background: #1db954;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    
+    &:hover {
+        background: #1ed760;
+        transform: scale(1.03);
+    }
+}
+
+.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid #666;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    
+    &:hover {
+        border-color: white;
+        transform: scale(1.03);
+    }
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.premium-image {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(28, 255, 107, 0.682));
+}
+
+.features {
+    margin: 40px 0;
+}
+
+.features-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    position: relative;
+    
+    &::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #1db954;
+        margin: 15px auto 0;
+    }
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: #282828;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    
+    &:hover {
+        transform: translateY(-5px);
+        background: #333;
+    }
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.testimonials {
+    margin: 50px 0 30px;
+}
+
+.testimonial-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    
+    p {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    
+    span {
+        color: #1db954;
+        font-weight: bold;
+    }
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid #1db954;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+    margin-top: 30px;
+    
+    p {
+        color: #1db954;
+        text-decoration: none;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .heading {
+        font-size: 1.8rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,252 @@
+.auth-form {
+    width: 580px;
+    background-color: var(--white-color);
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 28px rgb(0 0 0 / 20%);
+}
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input::placeholder {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.wrapper {
+    position: fixed;
+    font-family: var(--font-family-quicksand);
+    top: 240px;
+    right: 0px;
+    bottom: 0px;
+    left: 68%;
+    display: flex;
+    z-index: 1000;
+    width: 340px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto auto 0;
+    background: #ffffff;
+    display: flex;
+    overflow: hidden;
+}
+.sidebar {
+    width: 36%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logout {
+    text-align: center;
+    margin-top: 20px;
+}
+.sidebar .logout i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.main .welcome {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.main .select-chat {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.main .chat-icon {
+    font-size: 50px;
+}
+
+.logout {
+    color: #fff;
+    padding: 8px 0;
+    font-size: 18px;
+    border-radius: 22px;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+.chat-container {
+    width: 100%;
+    height: 100%;
+    background: rgb(64 64 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    background: #2cb95d;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faClose-message{
+    cursor: pointer;
+    padding: 4px 6px;
+    background-color: #1d5e34;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px 8px 2px 10px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.message img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.message.sent {
+    justify-content: flex-end;
+}
+.message.sent .text {
+    background: #2cb95d;
+    color: white;
+}
+.message.received {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.full-name{
+    font-size: 12px;
+    margin-left: 4%;
+    margin-bottom: 2px;
+}
+
+.message.received .text {
+    background: #1f1f1f;
+    color: white;
+}
+
+.msg-wr{
+    display: flex;
+    align-items: end;
+    width: 100%;
+}
+
+.text {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 18px;
+    max-width: 70%;
+    text-align: left;
+    font-weight: 500;
+    display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.timestamp {
+    font-size: 10px;
+    color: #ccc;
+    margin-left: 5px;
+}
+.input-container {
+    display: flex;
+    border-top: 1px solid;
+    align-items: center;
+    // background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: relative;
+}
+.icon-smile {
+    position: absolute;
+    right: 16%;
+    color: #1f1f1f;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input-container input {
+    flex: 1;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 24px;
+    margin-right: 10px;
+}
+.input-container i {
+    color: white;
+}
+
+.icon-paper-plane {
+    font-size: 22px;
+}
+
+.icon-paper-plane:hover {
+    cursor: pointer;
+}
+
+.emoji-picker-container {
+    position: absolute;
+    bottom: 100%;
+    right: 2%;
+    z-index: 10;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #dbd7d7;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-wr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contacts{
+    overflow-y: auto;
+}
+
+.no-message{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+}
+
+.no-message span{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}

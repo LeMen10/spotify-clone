@@ -1,0 +1,80 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.welcome-container {
+    background-color: #1db954;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 46%;
+    height: 70%;
+    margin: auto;
+}
+
+.welcome-container img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.welcome-container h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.welcome-container .btn {
+    display: block;
+    width: 100%;
+    max-width: 238px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: #1db954;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.welcome-container .login {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.welcome-container .login a {
+    color: white;
+    text-decoration: underline;
+}
+
+.login-btn{
+    margin-left: 6px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.register-btn a{
+    cursor: pointer;
+    color: black;
+}
